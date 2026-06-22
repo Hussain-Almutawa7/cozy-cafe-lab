@@ -7,7 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const btnColor = document.querySelector("#bg-color-btn");
     btnColor.addEventListener("click", () => {
-        document.body.style.backgroundColor = "lightsteelblue"
+        if(document.body.style.backgroundColor !== "lightsteelblue")
+            document.body.style.backgroundColor = "lightsteelblue"
+        else
+            document.body.style.backgroundColor = ""
     });
 
     const dayQoute = document.querySelector("#quote-of-the-day");
