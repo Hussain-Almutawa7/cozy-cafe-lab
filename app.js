@@ -1,9 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
     const webTitile = document.querySelector("#main-title");
     webTitile.textContent = "Welcome to the Cozy Cafe"
     webTitile.style.textAlign = "center";
-
-
 
     const btnColor = document.querySelector("#bg-color-btn");
     btnColor.addEventListener("click", () => {
@@ -56,4 +53,3 @@ document.addEventListener("DOMContentLoaded", () => {
         if(e.textContent === "Fish Tacos")
             pastMenu.removeChild(e)
     })
-})
